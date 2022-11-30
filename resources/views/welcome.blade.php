@@ -19,6 +19,7 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
          <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -26,16 +27,16 @@
     <body class="antialiased">
         <ul class="nav justify-content-center  ">
             <li class="nav-item">
-                <a class="nav-link btn btn-danger" href="{{route('welcome')}}" aria-current="page"><h3 class="text-white">LARAVEL</h3></a>
+                <a class="nav-link btn btn-danger" href="{{route('welcome')}}" aria-current="page"><h3 class="text-white"><i class="fa-brands fa-laravel"></i> LARAVEL</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link btn btn-success" href="{{route('libros.index')}}" aria-current="page"><h3 class="text-white">LIBROS</h3></a>
+                <a class="nav-link btn btn-success" href="{{route('libros.index')}}" aria-current="page"><h3 class="text-white"><i class="fa-solid fa-book"></i> LIBROS</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link btn btn-info" href="{{route('categorias.index')}}" aria-current="page"><h3 class="text-white">CATEGORIAS</h3></a>
+                <a class="nav-link btn btn-info" href="{{route('categorias.index')}}" aria-current="page"><h3 class="text-white"><i class="fa-solid fa-bookmark"></i> CATEGORIAS</h3></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link btn btn-warning" href="{{route('autor.index')}}" aria-current="page"><h3 class="text-white">AUTORES</h3></a>
+              <a class="nav-link btn btn-warning" href="{{route('autor.index')}}" aria-current="page"><h3 class="text-white"><i class="fa-solid fa-circle-user"></i> AUTORES</h3></a>
           </li>
         </ul>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">

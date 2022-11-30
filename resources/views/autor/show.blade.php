@@ -7,27 +7,30 @@
 
 <div class="card m-5">
     <div class="card-header">
-        {{$autor->id}}
+        {{$autor->id}} {{$autor->nombres}} {{$autor->apellidos}}
     </div>
     <div class="card-body">
-        {{$autor->nombres}}
+        
+        <table class= "table table-success text-center">
+            <th>EL AUTOR <h4> {{$autor->nombres}} {{$autor->apellidos}} </h4> TIENE LOS LIBROS</th>
+            @foreach ($autor->libros as $registro)
+            <tr>
+                <td><h3>{{$registro->nombre}}</h3></td>
+            </tr>
+            
+        @endforeach
+        
+        
+        </table>
     </div>
-     <div class="card-body">
-        {{$autor->apellidos}}
-    </div>
+    
     <div class="card-footer text-muted">
         <br>
     </div>
 </div>
-<h3>EL AUTOR</h3> <h3>{{$autor->nombres}}</h3>
 
-<h2>TIENE LOS LIBROS</h2>
 
-@foreach ($autor->libros as $registro)
-    <h3>{{$registro->nombre}}</h3>
-    
-@endforeach
-
-@endsection
 
 @extends('layouts.footer')
+
+@endsection
